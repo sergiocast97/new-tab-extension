@@ -30,7 +30,7 @@ export default function Clock({ props }){
 
     return (
         <>
-            <p className="text-9xl text-white font-bold drop-shadow-lg ">
+            <p className="text-6xl font-semibold text-theme-white md:text-8xl lg:text-9xl drop-shadow-lg ">
                 <span>{ toTwoDigits(time.hours) }</span>
                 <span className="animate-separator">:</span>
                 <span>{ toTwoDigits(time.minutes) }</span>

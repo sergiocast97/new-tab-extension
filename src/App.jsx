@@ -7,9 +7,9 @@ function App() {
 
   return (
     <>
-      <div className="h-screen w-full bg-slate-950 relative text-white">
+      <div className="relative w-full h-screen bg-theme-darkest text-theme-white">
 
-        <div className='z-10 relative w-full h-full  grid place-items-center text-center '>
+        <div className='relative z-10 grid w-full h-full text-center pointer-events-none place-items-center'>
           <Clock />
         </div>
         
