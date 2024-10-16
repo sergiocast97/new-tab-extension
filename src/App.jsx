@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Calendar from './components/calendar'
 import Clock from './components/clock'
-import BackgroundImage from './components/backgroundImage'
+import Background from './components/background'
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
                 </div>
                 
                 <div className="absolute inset-0 z-0">
-                    <BackgroundImage />
+                    <Background />
                 </div>
                 
             </div>
