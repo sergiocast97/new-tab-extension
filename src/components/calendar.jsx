@@ -6,7 +6,7 @@ export default function Calendar({ date }){
         })
     }
 
-    function getOrdinal(number) {
+    const getOrdinal = (number) => {
         const formatter = new Intl.PluralRules('en-UK', { type: 'ordinal' })
         const ordinals = { one: 'st', two: 'nd', few: 'rd', many: 'th', zero: 'th', other: 'th '}
         return `${number}${ordinals[formatter.select(number)]}`
