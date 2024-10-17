@@ -9,7 +9,7 @@ export default function Background(){
         <>
             <img
                 className="object-cover w-full h-full" 
-                alt="Background Image"
+                alt={pictureList[position].author }
                 src={ pictureList[position].img }
                 />
         </>
