@@ -17,7 +17,7 @@ function App() {
         <>
             <div className="relative grid w-full h-screen bg-theme-darkest text-theme-white place-items-center">
 
-                <div className='relative z-10 flex flex-col items-center justify-center gap-2 text-center'>
+                <div className='relative z-10 flex flex-col items-center justify-center gap-1 text-center'>
                     <Calendar date={date} />
                     <Clock date={date} />
                 </div>

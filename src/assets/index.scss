@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url('./fonts/Inter-VariableFont.ttf'), format('truetype');
+}
+
+// Stops chrome from injecting fonts
+body { font-family: 'Inter' }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
