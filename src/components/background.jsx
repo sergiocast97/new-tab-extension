@@ -11,7 +11,7 @@ export default function Background(){
                 className="object-cover w-full h-full" 
                 alt={pictureList[position].author }
                 src={ pictureList[position].img }
-                />
+            />
         </>
     )
 }
