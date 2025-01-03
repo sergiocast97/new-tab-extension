@@ -1,5 +1,5 @@
-export default function Clock({ date }) {
-  const toTwoDigits = (value) => {
+export default function Clock({ date }: { date: Date }) {
+  const toTwoDigits = (value: number) => {
     return value.toLocaleString('en-UK', {
       minimumIntegerDigits: 2,
     });

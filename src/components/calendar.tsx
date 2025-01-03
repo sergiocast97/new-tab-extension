@@ -1,11 +1,11 @@
-export default function Calendar({ date }) {
-  const getMonthName = (date) => {
+export default function Calendar({ date }: { date: Date }) {
+  const getMonthName = (date: Date) => {
     return date.toLocaleString('en-UK', {
       month: 'long',
     });
   };
 
-  const getOrdinal = (number) => {
+  const getOrdinal = (number: number) => {
     const formatter = new Intl.PluralRules('en-UK', { type: 'ordinal' });
     const ordinals = {
       one: 'st',
