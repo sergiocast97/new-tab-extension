@@ -9,11 +9,11 @@ export default {
     extend: {
       colors: {
         theme: {
-          darkest: '#18181B', // Background
-          dark: '#27272A', // Foregorund
-          medium: '#52525B', // Border Weak
-          light: '#A1A1AA', // Border Strong
-          lightest: '#D4D4D8', // Text Copy
+          darkest: '#1A1D33', // Background
+          dark: '#2E324D', // Foregorund
+          medium: '#474B66', // Border Weak
+          light: '#9FA3BF', // Border Strong
+          lightest: '#CACEE5', // Text Copy
           white: '#FFFFFF', // Text Heading
         },
       },
