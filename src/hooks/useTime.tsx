@@ -7,7 +7,7 @@ export default function useTime() {
       setDate(new Date());
     }, 1000);
     return () => clearInterval(clockInterval);
-  });
+  }, []);
 
   return [date];
 }
