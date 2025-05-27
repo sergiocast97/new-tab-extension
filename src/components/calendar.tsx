@@ -20,7 +20,7 @@ export default function Calendar({ date }: { date: Date }) {
 
   return (
     <>
-      <p className="text-xl font-semibold text-theme-white drop-shadow-md">
+      <p className="text-xl font-semibold text-theme-white">
         <span>{getOrdinal(date.getDate())} </span>
         <span>{getMonthName(date)}, </span>
         <span>{date.getFullYear()}</span>

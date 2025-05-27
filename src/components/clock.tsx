@@ -7,7 +7,7 @@ export default function Clock({ date }: { date: Date }) {
 
   return (
     <>
-      <p className="font-semibold text-theme-white text-9xl/none drop-shadow-md ">
+      <p className="font-semibold text-theme-white text-9xl/none">
         <span>{toTwoDigits(date.getHours())}</span>
         <span className="animate-separator">:</span>
         <span>{toTwoDigits(date.getMinutes())}</span>
