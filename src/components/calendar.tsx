@@ -5,22 +5,24 @@ export default function Calendar({ date }: { date: Date }) {
     });
   };
 
-  const getOrdinal = (number: number) => {
-    const formatter = new Intl.PluralRules('en-UK', { type: 'ordinal' });
-    const ordinals = {
-      one: 'st',
-      two: 'nd',
-      few: 'rd',
-      many: 'th',
-      zero: 'th',
-      other: 'th ',
-    };
-    return `${number}${ordinals[formatter.select(number)]}`;
-  };
+  const getOrdinal = (number: number): string => {
+    const mod10 = number % 10;
+    const mod100 = number % 100;
+    let suffix = 'th';
 
+    if (mod10 === 1 && mod100 !== 11) {
+      suffix = 'st';
+    } else if (mod10 === 2 && mod100 !== 12) {
+      suffix = 'nd';
+    } else if (mod10 === 3 && mod100 !== 13) {
+      suffix = 'rd';
+    }
+
+    return `${number}${suffix}`;
+  };
   return (
     <>
-      <p className="text-xl font-semibold text-theme-white drop-shadow-md">
+      <p className="text-lg sm:text-xl font-semibold text-theme-white drop-shadow-md">
         <span>{getOrdinal(date.getDate())} </span>
         <span>{getMonthName(date)}, </span>
         <span>{date.getFullYear()}</span>
